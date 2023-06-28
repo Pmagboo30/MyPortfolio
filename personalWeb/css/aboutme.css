@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+.aboutMe {
+  height: 60%;
+  display: flex;
+}
+.aboutMeTitle {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.aboutMeCont {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.abtCont {
+  width: 50%;
+  color: white;
+  font-family: IBM Plex Mono;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+  text-align: justify;
+}
+.abmTitle {
+  margin-right: 5%;
+  width: 50%;
+  color: white;
+  font-family: IBM Plex Mono;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+.abtME {
+  margin: 0px;
+  color: #ca725e;
+  font-size: 24px;
+}
+.abtDscrp {
+  margin: 0px;
+  font-size: 36px;
+  font-weight: bold;
+}

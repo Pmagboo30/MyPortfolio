@@ -1,0 +1,212 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <link rel="stylesheet" type="text/css" href="../css/aboutme.css" />
+    <link rel="stylesheet" type="text/css" href="../css/proj.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-zinc-950">
+    <div class="bg-zinc-950 h-full flex">
+      <div class="w-3/6 flex items-center justify-end">
+        <div class="fontStyle mr-[5%] h-3/6 w-3/6 text-slate-100">
+          <div class="name nameAnim text-4xl font-bold">Hello, It's Paul</div>
+          <div class="greetAnim text-7xl font-bold">WELCOME TO</div>
+          <div class="greetAnim text-7xl font-bold">MY WORLD!</div>
+          <p class="homeContext text-justify pb-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
+          <div>
+            <button
+              class="mt-[3%] h-10 w-32 bg-zinc-950 text-[#ca725e] rounded-xl border-solid border-2 border-[#ca725e]"
+            >
+              ABOUT ME
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-3/6 flex items-center">
+        <div class="max-w-[689px] max-h-[689px] w-full h-full">
+          <image
+            src="../photo/[removal 1 (1).png"
+            class="h-[70%] border-solid border-4 border-[#ca725e] rounded-[70%] mt-[10%] m-l[10%]"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- //about me// -->
+    <div class="aboutMe">
+      <div class="aboutMeTitle">
+        <div class="abmTitle">
+          <p class="abtME greetAnim">ABOUT ME</p>
+          <h1 class="abtDscrp greetAnim">
+            I approach website creation and design with utmost passion.
+          </h1>
+        </div>
+      </div>
+      <div class="aboutMeCont">
+        <p class="abtCont nameAnim">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.”
+        </p>
+      </div>
+    </div>
+    <!-- //projects// -->
+    <div class="projCont">
+      <div class="leftCont">
+        <div class="leftCon">
+          <div class="leftTitle">
+            <p class="rMsg">RECENT</p>
+            <h1 class="pMsg">PROJECTS +</h1>
+          </div>
+          <div>
+            <image src="../photo/image 1.png" class="projSvg" />
+          </div>
+        </div>
+      </div>
+      <div class="rightCont">
+        <image src="../photo/image 2.png" class="projSvg" />
+        <image src="../photo/image 3.png" class="projSvg" />
+      </div>
+    </div>
+    <!-- contact -->
+    <div class="contCon">
+      <image src="../photo/logo.svg" class="logoSvg" />
+      <p class="name text-4xl font-bold">PAUL DANIEL MAGBOO</p>
+      <div class="sclogos">
+        <image src="../photo/🦆 icon _facebook_.svg" class="scSvg" />
+        <image src="../photo/🦆 icon _gmail_.svg" class="scSvg" />
+        <image src="../photo/🦆 icon _instagram_.svg" class="scSvg" />
+      </div>
+    </div>
+    <div class="copyRight">© 2023 Paul Daniel Magboo</div>
+  </body>
+</html>
+<script>
+  var aboutMeButton = document.querySelector("button");
+  aboutMeButton.addEventListener("click", function () {
+    document.querySelector(".aboutMe").scrollIntoView({
+      behavior: "smooth", // Use smooth scrolling
+    });
+  });
+</script>
+<style>
+  body {
+    overflow-y: scroll;
+  }
+  .contCon {
+    height: 70%;
+    font-size: 30px;
+    color: white;
+    font-family: IBM Plex Mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logoSvg {
+    height: 30%;
+  }
+  p {
+    margin: 0px;
+  }
+  .sclogos {
+    margin-top: 1%;
+  }
+  .scSvg {
+    height: 50%;
+  }
+  .copyRight {
+    height: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  /* animation */
+  .nameAnim {
+    animation-name: nameAnim;
+    position: relative;
+    animation-duration: 4s;
+    /* animation-direction: reverse; */
+  }
+  .name {
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(
+      to right,
+      #2bb673,
+      #30dd8a,
+      #40e495 25%,
+      #25aae1 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 300ms ease-in-out;
+    text-decoration: none;
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+  .greetAnim {
+    animation-name: greetTextAnim;
+    animation-duration: 4s;
+    position: relative;
+    display: inline-block;
+  }
+  @keyframes greetTextAnim {
+    0% {
+      opacity: 0;
+      left: -100px;
+    }
+    100% {
+      opacity: 1;
+      left: 0px;
+    }
+  }
+  @keyframes nameAnim {
+    0% {
+      opacity: 0;
+      left: 100px;
+    }
+    100% {
+      opacity: 1;
+      left: 0px;
+    }
+  }
+  .homeContext {
+    animation-name: homeContAnim;
+    animation-duration: 4s;
+    position: relative;
+    transition-timing-function: ease-in;
+  }
+  @keyframes homeContAnim {
+    0% {
+      opacity: 0;
+      top: 50px;
+    }
+    50% {
+      opacity: 0;
+      top: 25px;
+    }
+    100% {
+      opacity: 1;
+      top: 0px;
+    }
+  }
+</style>
